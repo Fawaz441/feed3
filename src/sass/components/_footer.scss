@@ -1,0 +1,125 @@
+footer {
+  // border-top: 1px solid #FF56F6;
+  padding: 3rem 1rem;
+
+  .container{
+    display: flex;
+   flex-direction: column;
+    // margin: 6rem  3rem;
+    gap: 4rem;
+
+  .upper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        li {
+          color: var(--accent-color4);
+          font-size: 13px;
+        }
+      }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      gap: 8rem;
+      .link {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h4 {
+          color: var(--accent-color1);
+          text-transform: uppercase;
+        }
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          // li {
+          // }
+        }
+      }
+    }
+  }
+}
+  .lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    p{
+      color: var(--accent-color1);
+      font-size: 13px;
+      text-align: center;
+    }
+    ul{
+      display: flex;
+      gap: 12px;
+
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+[data-theme="light"] {
+  footer {
+    .brand-container {
+      .brand {
+        img {
+          filter: brightness(0);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  footer {
+    .container{
+      margin: 0;
+      gap: 2rem;
+      padding: 1rem 2rem;
+    .upper {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .link {
+          gap: 1rem;
+          text-align: center;
+        }
+      }
+    }
+    .lower {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        font-size: 13px;
+      }
+     
+
+      ul{
+        align-items: center;
+        justify-content: center;
+        max-width: 200px;
+        
+      }
+    }
+  }
+
+  }
+}

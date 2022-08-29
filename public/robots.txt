@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap:https://feed3.io/sitemap.xml

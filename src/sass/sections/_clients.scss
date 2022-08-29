@@ -1,0 +1,38 @@
+.clients {
+  padding: 4rem 0;
+  .container {
+    
+    .clients-container {
+      display:flex;
+      grid-gap: 55px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .client {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 1rem 2rem;
+    .container {
+       h1{
+         font-size: 20px;
+       }
+      .clients-container {
+        flex-wrap: wrap;
+        text-align: left;
+        gap: 0.5rem;
+
+        .client {
+          
+          img {
+            width:100px;
+          }
+        }
+      }
+    }
+  }
+}

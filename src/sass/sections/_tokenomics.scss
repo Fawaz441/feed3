@@ -1,0 +1,126 @@
+.tokenomics {
+    padding: 6rem 3rem;
+    max-width: 90%;
+    margin: 0 auto;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 65px;
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            grid-gap: 65px;
+            max-width: 1036px;
+            margin: 0 auto;
+        }
+        .title{
+            background:var(--background-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            // text-fill-color: transparent;
+            mix-blend-mode: normal;
+            font-size: 60px;
+         }
+
+         .description{
+            color: var(--accent-color1);
+        }
+
+        .tokenomics-table-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            width: 100%;
+          .tokenomics-mobile{
+                display: none;
+           }
+           .tokenomics-table {
+            display: flex;
+            width: 100%;
+
+            .table-pink{
+                background: var(--background-text);
+                border-radius: 10px 0px 0px 10px;
+              p{
+                  padding: 0.8rem;
+                  height: 60px;
+                  width: 200px;
+                  color: var(--accent-color1);
+              }
+              
+            }
+            .table-white{
+                background: var(--accent-color1);
+                border-radius: 0px 10px  10px 0px;  
+                p{
+                    padding: 0.8rem;
+                    height: 60px;
+                    width: 400px;
+                    border-bottom: 1px solid var(--accent-color2);
+                }
+                .last{
+                  border-bottom: 0px;
+                }
+            }
+        }
+
+        }
+    }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      padding: 1rem 1rem;
+      .container {
+           .title-container{
+               gap: 30px;
+               .title{
+                   font-size: 32px;
+               }
+               .description{
+                   font-size: 14px;
+               }
+           }
+          .tokenomics-table-container{
+              grid-template-columns: 1fr;
+              justify-content: center;
+              align-items: center;
+
+            .tokenomics-web{
+                display: none;
+            }
+           .tokenomics-mobile {
+                display: block;
+            img {
+                width: 100%;
+            }
+           }
+
+           .tokenomics-table {
+            justify-content: center;
+                .table-pink{
+                    p{
+                      width: 100%;
+                      font-size: 12px;
+                    }
+                }
+                .table-white{
+                    p{
+                      width: 100%;
+                      font-size: 12px;
+
+                    }
+                }
+           }
+           
+          
+        }
+      }
+    }
+  }
+
+  
+  

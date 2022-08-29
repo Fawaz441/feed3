@@ -1,0 +1,29 @@
+.bonus{
+    padding: 0rem 1rem;
+    img{
+      width: 100%;
+    }
+        h1{
+            color: white;
+            text-align: center;
+            // margin-top: 5rem;
+            padding: 3rem 0rem;
+            line-height: 1.5;
+            font-size: 40px;
+          } 
+          .gradient{
+            background:var(--background-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            mix-blend-mode: normal;
+          }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    h1{
+        font-size: 20px;
+        padding: 2rem 0rem;
+    }
+  }
+}

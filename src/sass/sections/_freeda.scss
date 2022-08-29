@@ -1,0 +1,177 @@
+.freeda {
+    padding: 6rem 1rem;
+    overflow-y: hidden;
+  
+    .container {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      .content {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        flex: 1;
+
+        p{
+          color: var(--accent-color1); 
+          line-height: 2;
+
+        }
+        
+        .title {
+          color: var(--accent-color1); 
+          font-size: 50px;
+          line-height: 120%;
+          font-weight: 400;
+          .gradient{
+            background:var(--background-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            mix-blend-mode: normal;
+          }
+          
+        }
+        .sub-title{
+            color: var(--accent-color1);
+            .subtitle-header{
+                font-family: var(--font-family-second);
+                background: var(--background-text);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-size: 99px;
+            }
+            
+          }
+        .description {
+          color: var(--accent-color1);
+          line-height: 32px;
+        }
+        .f3-container{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+        .f3-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+        }
+        .f3-item img{
+          width: 30px;
+          height: 34px;
+        }
+        .f3-item-description{
+          color: var(--accent-color3);
+          font-size:20px;
+          
+        }
+     
+      }
+      .image-container {
+        position: relative;
+        z-index: 10;
+        .image {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+          img {
+            width: 100%;
+          }
+          .freeda-mobile{
+            display: none;
+          }
+        }
+        .ellipse-container {
+          .ellipse {
+            z-index: -1;
+            position: absolute;
+            height: 15rem;
+            width: 15rem;
+            filter: blur(100px);
+            transform: rotate(-38.84deg);
+            width: 244px;
+            height: 574.71px;
+            filter: blur(160px);
+          }
+          .purple {
+            top: 10%;
+            right: 40%;
+            background-color: rgba(31, 98, 234, 0.5);;
+          }
+          .orange {
+            bottom: 40%;
+            left: 40%;
+            background-color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .freeda {
+      padding: 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      .container {
+        font-size: 16px;
+        flex-direction: column-reverse;
+        .content{
+            align-items: center;
+            p{
+              text-align: center;
+            }
+            .title{
+                font-size:28px;
+                line-height: 42px;
+                text-align: center;
+            }
+            .sub-title{
+                text-align: center;
+
+                .subtitle-header{
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+        .image-container {
+        
+          .image {
+            img {
+              width: 300px;
+              height: 300px
+            }
+            .freeda-web{
+              display: none;
+            }
+            .freeda-mobile{
+              display: block;
+            }
+          }
+          .ellipse-container {
+            .ellipse {
+              height: 6rem;
+              width: 6rem;
+              filter: blur(30px);
+            }
+            .pink {
+              right: 10%;
+            }
+            .orange {
+              left: -5%;
+            }
+          }
+        }
+      }
+    }
+  }
+  

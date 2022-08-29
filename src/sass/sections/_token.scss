@@ -1,0 +1,123 @@
+.token{
+    color: white;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .token-header{
+            padding-top: 8rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h5{
+                font-size: 20px;
+            }
+            h1{
+            background:var(--background-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            mix-blend-mode: normal;
+            font-size: 72px;
+            }
+        }
+        img{
+            margin-bottom: 8rem;
+            padding-top: 2rem;
+            
+        }
+      .token-item-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        .item-1{
+           background-color: transparent !important;
+           align-items: center !important;
+           p{
+            text-align: center;
+           }
+        }
+       
+        .token-item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            padding:2rem;
+            background: rgba(185, 54, 238, 0.1);
+            border-radius: 10px; 
+            img{
+                // width: 100px;
+                margin-bottom: 0.5rem;
+            }
+            h1{
+                background:var(--background-text);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                mix-blend-mode: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 35px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                margin-bottom: 1rem;
+            }
+            h2{
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 35px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 27px;
+                letter-spacing: 0.2px;
+            }
+            button{
+                margin-top: 2rem;
+            }
+        }
+      }
+    }
+    @media screen and (min-width: 280px) and (max-width: 600px) {
+        .container{
+            .token-header{
+                padding: 2rem 1rem;
+                h1{
+                    font-size:33px;
+                }
+                h5{
+                    font-size: 12px;
+                }
+            }
+            img{
+                margin-bottom: 3rem;
+                padding-top: 2rem;
+            }
+            .token-item-container{
+                grid-template-columns: 1fr;
+                .token-item{
+                    align-items: center;
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}

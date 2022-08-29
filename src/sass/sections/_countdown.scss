@@ -1,0 +1,109 @@
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    align-items: center;
+}
+
+.countdown-btn{
+    width: 100%;
+    height: auto;
+    background-color: #14467C;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    border-radius: 0px;
+}
+
+.countdown-clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-clock section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    margin-bottom: 60px;
+}
+
+.countdown-clock section p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'open_24_display_stregular';
+    color: var(--accent-color1);
+    margin-bottom: 10px;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.countdown-clock section small{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+.countdown-clock span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    color: var(--accent-color1);
+    margin-top: -30px;
+}
+
+
+@media screen and (max-width:850px) {
+    
+    // .countdown-clock span{
+    //     margin-top: 0px;
+    // }
+    // .countdown-clock section{
+    //     margin: 0rem;
+    // }
+
+    // .countdown-clock section p{
+    //     font-size: 20px;
+    // }
+
+    // .countdown-clock section small{
+    //     font-size: 14px;
+    // }
+    // .countdown-clock span{
+    //     padding: 10px;
+    // }
+}
+
+@media screen and (max-width:650px) {
+
+    .countdown-clock section p{
+        font-size: 30px;
+    }
+    .countdown-clock section small{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .countdown{
+        padding: 0.5rem;
+    }
+    .countdown-clock section p{
+       font-size: 20px;
+    }
+    .countdown-clock section{
+         margin: 0rem;
+         margin-bottom: 60px;
+    }
+    .countdown-clock span{
+        font-size: 16px;
+    }
+}

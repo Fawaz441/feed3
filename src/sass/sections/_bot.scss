@@ -1,0 +1,189 @@
+.bot {
+    padding: 6rem 1rem;
+   overflow-y: hidden;
+    .ellipse{
+      position: absolute;
+      width: 244px;
+      height: 274px;
+      left: 91px;
+      top: 5300px;
+      background: rgba(31, 98, 234, 0.5);
+      border: 1px solid #000000;
+      filter: blur(160px);
+      transform: rotate(-38.84deg);
+   }
+    .container {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 60px;
+      font-size: 18px;
+      .content {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        flex: 1;
+        .sub-title{
+          color: var(--accent-color1);
+        }
+        .title {
+          color: var(--accent-color1);
+          font-size: 60px;
+          line-height: 120%;
+          .gradient{
+            background:var(--background-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            mix-blend-mode: normal;
+          }
+  
+        }
+        .description {
+          color: var(--accent-color1);
+          line-height: 32px;
+          font-size: 18px;
+        }
+        .f3-container{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+        .f3-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+        }
+        .f3-item img{
+          width: 30px;
+          height: 34px;
+        }
+        .f3-item-description{
+          color: var(--accent-color1);
+          font-size:16px;
+          line-height: 25px;
+          font-weight: 400;
+        }
+        .btn-container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin-top: 30px;
+          .black-btn{
+            background: #333333;
+          }
+        }
+      
+      }
+      .image-container {
+        position: relative;
+        flex: 1;
+        z-index: 10;
+        .image {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+          img {
+              width: 100%;
+          }
+        }
+        .ellipse-container {
+          .ellipse {
+            z-index: -1;
+            position: absolute;
+            height: 15rem;
+            width: 15rem;
+            filter: blur(100px);
+            transform: rotate(-38.84deg);
+            width: 244px;
+            height: 574.71px;
+            filter: blur(160px);
+          }
+  
+         
+          .purple {
+            top: 10%;
+            right: 40%;
+            background-color: rgba(31, 98, 234, 0.5);;
+          }
+         
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .bot{
+      padding: 5rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      .container {
+        flex-direction: column-reverse;
+        grid-gap: 60px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          .sub-title{
+              font-size: 20px;
+            }
+          .title{
+            font-size: 32px;
+            text-align: center;
+            line-height: 120%;
+            font-weight: 400;
+          }
+  
+          .description{
+            font-size: 14px;
+            text-align: center;
+          }
+          .f3-container{
+              grid-template-columns: 1fr;
+            .f3-item{
+                img{
+                    width: 14px;
+                    height: 20px;
+                }
+                .f3-item-description{
+                    font-size: 12px;
+                }
+            }
+            button{
+                width: 280px;
+                margin-top: 10%;
+            }
+          }
+        }
+
+        .btn-container{
+          flex-direction: column;
+        }
+        .image-container {
+            
+          .ellipse-container {
+            .ellipse {
+              height: 6rem;
+              width: 6rem;
+              filter: blur(30px);
+            }
+            .pink {
+              right: 10%;
+            }
+            .orange {
+              left: -5%;
+            }
+          }
+        }
+      }
+    }
+  }
+  

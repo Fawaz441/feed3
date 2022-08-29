@@ -1,0 +1,69 @@
+.powered{
+    background: url('https://res.cloudinary.com/resolvetech/image/upload/v1660383038/coin_bbfggc.svg');
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    .sub-header{
+        font-size: 36px;
+    }
+    .title{
+       background:var(--background-text);
+       -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        mix-blend-mode: normal;
+    }
+
+    .sub-title{
+        font-size: 24px;
+        line-height: 1.5;
+        max-width: 873px;
+    }
+
+ 
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .powered {
+      padding: 3rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+      background-size: cover;
+      margin-top: 1rem;
+      height: auto;
+      .container {
+        .content{
+          .title{
+            font-size: 32px;
+            text-align: center;
+            line-height: 120%;
+            font-weight: 400;
+          }
+          .sub-header{
+            font-size: 20px ;
+            text-align: center;
+          }
+
+          .sub-title{
+              font-size: 14px !important;
+              line-height: 25px;
+          }
+  
+    }
+        }
+       
+      }
+    }
+
+   
+  }
+
+  @media screen and  (max-width: 600px) {
+    .powered{
+      background-image: url('https://res.cloudinary.com/resolvetech/image/upload/v1660383032/coin-mobile_xrp7lo.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }

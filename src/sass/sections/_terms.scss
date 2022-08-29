@@ -1,0 +1,56 @@
+.terms{
+    color: white;
+    padding: 3rem 1rem;
+    .container{
+        max-width: 680px;
+        margin: 3rem auto;
+        .terms-header{
+            h1{
+               margin-bottom: 10px;
+            }
+            p{
+              opacity: 0.8;
+            }
+        }
+        .terms-section{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .white-text{
+                color: white;
+            }
+            p{
+              font-size: 15px;
+              font-weight: normal;
+              color: rgba(255, 255, 255, 0.75);
+              line-height: 2;
+            }
+
+            ul{
+               color: rgba(255, 255, 255, 0.75);
+               padding: 1rem;
+
+              li{
+                padding: 0.5rem;
+                font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .terms {
+        .container{
+            .terms-section{
+                p{
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
