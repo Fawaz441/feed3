@@ -93,7 +93,7 @@ const BuyPage = () => {
                 Presale<br/>Ends Soon
                 </h2>
                 <p className="mt-5 md:mt-[70px] text-center text-white text-xl md:text-[27px]">1 USDT = 10000.00 #FD3</p>
-                <button className="mt-5 md:mt-[77px]">Connect Wallet</button>
+                <button className="mt-5 md:mt-[77px]" onClick={()=> setShowProviderModal(true)}>Connect Wallet</button>
             </div>
             <div className="rounded-[10px] bg-[#B936EE]/[.1] p-5 md:p-[45px]">
                 <div className="rounded-[20px] overflow-hidden md:w-[468px] h-[250px] mx-auto">
