@@ -1,3 +1,24 @@
+button.in{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), linear-gradient(90deg, #FF56F6 0%, #3BACE2 98.99%);
+}
+
+.rect-fills rect{
+  width:100%;
+}
+
+.bordered-div{
+    background-image: radial-gradient(circle at 100% 100%, transparent 25px, #ff56f6 25px, #ff56f6 27px, transparent 27px), linear-gradient(to right, #ff56f6, #3bace2), radial-gradient(circle at 0% 100%, transparent 25px, #3bace2 25px, #3bace2 27px, transparent 27px), linear-gradient(to bottom, #3bace2, #b936ee), radial-gradient(circle at 0% 0%, transparent 25px, #b936ee 25px, #b936ee 27px, transparent 27px), linear-gradient(to left, #b936ee, #406aff), radial-gradient(circle at 100% 0%, transparent 25px, #406aff 25px, #406aff 27px, transparent 27px), linear-gradient(to top, #406aff, #ff56f6);
+    background-size: 27px 27px, calc(100% - 54px) 2px, 27px 27px, 2px calc(100% - 54px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    }
+
+    .gradient-bg-bg{
+      background: linear-gradient(90.19deg, #FF56F6 0.09%, #3BACE2 58.82%, #406AFF 89.49%, #B936EE 99.89%);
+border-radius: 20px 0px 0px 20px;
+    }
+
+
 .play {
   padding: 6rem 1rem;
   overflow-y: hidden;
