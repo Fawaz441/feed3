@@ -6,8 +6,10 @@ import { MdClose } from "react-icons/md";
 import logo from "../assets/logo.svg";
 import padlock from "../assets/padlock.png";
 
+
 export default function Navbar() {
   const [navState, setNavState] = useState(false);
+  const hideNav = () => setNavState(false)
   return (
     <nav>
       <div className="brand-container">
@@ -28,25 +30,25 @@ export default function Navbar() {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <HashLink to="/#product">Product</HashLink>
+            <HashLink to="/#product" onClick={hideNav}>Product</HashLink>
           </li>
           <li>
-            <HashLink to="/tokenomics">Tokenomics</HashLink>
+            <HashLink to="/tokenomics" onClick={hideNav}>Tokenomics</HashLink>
           </li>
           <li>
-            <HashLink to="/#roadmap">Roadmap</HashLink>
+            <HashLink to="/#roadmap" onClick={hideNav}>Roadmap</HashLink>
           </li>
           <li>
             <a href="https://feed3.gitbook.io/feed3/" target='_blank' rel="noreferrer">Whitepaper</a>
           </li>
           <li>
-            <HashLink to="/#team">Team</HashLink>
+            <HashLink to="/#team" onClick={hideNav}>Team</HashLink>
           </li>
           <li>
-            <HashLink to="/#faq">FAQ</HashLink>
+            <HashLink to="/#faq" onClick={hideNav}>FAQ</HashLink>
           </li>
           <li>
-            <HashLink to="/buy">Buy Presale</HashLink>
+            <HashLink to="/buy" onClick={hideNav}>Buy Presale</HashLink>
           </li>
           <li>
            <a href="http://presale.feed3.io/" target='_blank' rel="noreferrer">Login</a>

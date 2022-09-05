@@ -34,6 +34,7 @@ const BuyPage = () => {
         setSelectedWalletMode(walletMode)
         hideProviderModal()
         navigate("/buy/options")
+        document.getElementById("currencies-btns")?.scrollIntoView()
     }
 
     useEffect(() => {
@@ -74,7 +75,7 @@ const BuyPage = () => {
                 $FD3 is the feedback-to-earn token in the Feed3 ecosystem and is a core catalyst for taking games of all sizes to the next level of engagement. It couldn’t be easier to get your hands on our token via our presale. Use the steps below to purchase $FD3.
                 </p>
                 {isBuyPage ? 
-                <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+                <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0" id="currencies-btns">
                     {currencies.map((currency, index) => (
                         <button className="w-fit" key={index} onClick={()=>setSelectedCurrency(currency)}>{`Buy with ${currency}`}</button>
                     ))}
@@ -87,6 +88,8 @@ const BuyPage = () => {
             }
             </div>
         </div>
+        {!isBuyPage && 
+        <>
         <div className="flex flex-col space-y-5 px-4 lg:space-y-0 lg:flex-row lg:space-x-[58px] justify-center">
             <div className="rounded-[10px] bg-[#B936EE]/[.1] md:px-[61px] md:pt-[52px] md:pb-[44px] p-4 flex flex-col items-center">
                 <h2 className="text-center text-[25px] md:text-[50px] gradient-text leading-[62.5px]">
@@ -115,19 +118,21 @@ const BuyPage = () => {
                     <div className={clsx("flex flex-col space-y-5 md:space-y-[30px] bordered-bottom pb-5 lg:pb-[73px] lg:space-y-0 lg:flex-row lg:space-x-[98px]",{"!lg:flex-row-reverse !lg:justify-end":((index+1)%2!==0)})}>
                         <div className="flex flex-col space-y-[59px] max-w-[724px]">
                             <h3 className="gradient-text text-xl md:text-[32px]">Step {index+1}/<span className="text-xl md:text-[38px]">{buySteps.length}</span></h3>
-                            <div className="mt-4 md:mt-[59px] text-white text-base md:text-2xl">
+                            <div className="mt-4 md:mt-[59px] text-white text-base md:text-2xl max-w-[724px]">
                             {step.instructions.map((instruction, index) => (
                             <p key={index} className="text-white text-sm text-center md:text-left leading-[27px]">{instruction}</p>
                             ))}
                             </div>
                         </div>
-                        <Floater className={clsx("mx-auto",{"lg:!ml-0 lg:!mr-[98px]":((index+1)%2===0)})} />
+                        <Floater className={clsx("mx-auto")} />
                     </div>
                    {index+1 !== buySteps.length && <Line/>}
                     </div>
                 ))}
             </div>
         </div>
+        </>
+        }
         <div className="mt-[100px] md:mt-[286px] flex flex-col items-center justify-center mb-[100px] md:mb-[304px] px-4">
             <h2 className="gradient-text text-center text-[25px] md:text-[50px]">100% Secured</h2>
             <p className="mt-5 md:mt-[50px] text-white text-center max-w-[969px]">
