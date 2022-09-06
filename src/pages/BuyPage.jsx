@@ -5,7 +5,6 @@ import line from "../assets/line.svg"
 import star from "../assets/pink-star.svg"
 import { ReactComponent as StepTwo } from "../assets/waver.svg";
 import {ReactComponent as Ellipse} from "../assets/ellipse.svg"
-import {ReactComponent as Floater} from "../assets/buy-steps/floater.svg"
 import {ReactComponent as Line} from "../assets/buy-steps/step-line.svg"
 import { buySteps } from "../utils/constants";
 import ProviderSelectModal from "../components/ProviderSelectModal";
@@ -124,7 +123,7 @@ const BuyPage = () => {
                             ))}
                             </div>
                         </div>
-                        <Floater className={clsx("mx-auto")} />
+                        {step.image}
                     </div>
                    {index+1 !== buySteps.length && <Line/>}
                     </div>
